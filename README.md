@@ -8,3 +8,13 @@ G : GOAL (EXIT)
 
 It finds the shortest Path using A* Algorithm
 
+## Use
+
+```Ruby
+  require 'maze_solver'
+
+  MazeSolver.to_image('file_name')
+
+  MazeSolver.to_json('file_name')
+```
+
