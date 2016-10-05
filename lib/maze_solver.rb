@@ -6,6 +6,8 @@ require "json"
 
 module MazeSolver
 
+  ## Better to implemented on a class after thoughts......Anyway..mabe later!!!
+
   def to_json(file_name)
     
     maze_array = from_file(file_name)
@@ -37,8 +39,6 @@ module MazeSolver
     nil
   end
 
-  private
-
   def from_file(file_name)
     ## Read file and export it to a 2D array
     ## Throw error if file doesnt exist
@@ -68,6 +68,6 @@ module MazeSolver
     maze
   end
 
-  module_function :to_json, :from_file, :to_maze, :to_image
+  module_function :to_json, :to_image, :from_file, :to_maze
 end
 
